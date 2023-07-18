@@ -3,16 +3,11 @@ import exampleImage from './images/react-logo.png';
 
 function Header() {
     return (
-        <header>
-          <nav className='nav'>
-            <img src={exampleImage} width = "120px" alt="react-logo" className="nav-logo"></img>
-            <ul className = 'nav-items'>
-              <li>Pricing</li>
-              <li>About</li>
-              <li>Contact</li>
-            </ul>
-          </nav>
-        </header>
+      <nav className='nav-title'>
+        <img src={exampleImage} alt="logo" />
+        <h3>ReactFacts</h3>
+        <h4>React Course - Project 1</h4>
+      </nav>
     )
   }
 
