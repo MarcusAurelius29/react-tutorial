@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  background-color: black;
 }
 
 body {
@@ -13,6 +14,7 @@ main {
   max-width: 600px;
   margin: 0 auto;
   padding: 20px;
+  
 }
 
 h1 {
@@ -22,12 +24,21 @@ h1 {
 }
 
 ul {
-  list-style: none;
+  list-style-type: disc; /* This sets the bullet points to the default disc style */
+  padding: 0;
+}
+
+li::marker
+{
+  color: skyblue;
+  font-size: 1.2em;
 }
 
 li {
   padding: 10px;
+  color: white;
   border-bottom: 1px solid #ccc;
+  /* This sets the text color to blue */
 }
 
 li:last-child {
@@ -35,13 +46,21 @@ li:last-child {
 }
 
 li:hover {
-  background-color: #f7f7f7;
+  background-color: beige;
 }
+
+img.white-logo {
+  background-color: transparent;
+  width: 120px; /* Adjust the width to make the logo bigger */
+  align-self: flex-end; /* This aligns the logo to the right */
+  margin-top: 20px; /* Add some space between the list and the logo */
+}
+
 .nav-title {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #333;
+  background-color: black;
   color: #fff;
   padding: 10px;
 }

@@ -1,3 +1,5 @@
+import whiteLogo from './images/react-1-logo-white.png'
+
 function MainContent() {
     return (
       <main>
@@ -9,6 +11,7 @@ function MainContent() {
         <li>It is a hireable skill</li>
         <li>It is maintained by some of the best developers around the planet</li>
       </ul>
+      <img src={whiteLogo} className='white-logo' alt='white-logo'></img>
       </main>
     )
   }
